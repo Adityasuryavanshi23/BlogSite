@@ -31,7 +31,7 @@ export const Blogscards = ({ movie, toggle, settoggle }) => {
         {islogin && auth.currentUser.uid === author.id && (
           <i
             onClick={updatedoc}
-            className="fa-solid fa-pen-to-square text-green-400 text-2xl cursor-pointer"
+            className="fa-solid fa-pen-to-square text-green-400 text-2xl cursor-pointer hover:scale-125 transition-all ease-in"
           ></i>
         )}
       </div>
@@ -49,7 +49,7 @@ export const Blogscards = ({ movie, toggle, settoggle }) => {
         {islogin && author.id === auth.currentUser.uid && (
           <i
             onClick={deletmovie}
-            className="fa-solid fa-trash-can cursor-pointer text-2xl text-red-500"
+            className="fa-solid fa-trash-can cursor-pointer text-2xl text-red-500 hover:scale-125 transition-all ease-in"
           ></i>
         )}
       </div>
