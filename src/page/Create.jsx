@@ -84,7 +84,7 @@ export const Create = () => {
           ></textarea>
           <div className="text-center px-4">
             <button className="bg-green-500 px-12 w-full py-2 text-white text-lg">
-              create{" "} now
+              create{" "} Now
             </button>
           </div>
         </form>
