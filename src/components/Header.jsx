@@ -84,13 +84,13 @@ export const Header = ({ toggle, settoggle }) => {
               className="fa-solid fa-moon cursor-pointer"
             ></i>
           )}
-          <p className="text-2xl dark:text-white">
+          <p className="text-2xl dark:text-white  hover:bg-[#20c2c2]  hover:py-2 hover:rounded-md">
             <NavLink className="px-4 py-2 " to="/">
               Home{" "}
             </NavLink>
           </p>
           {islogin && (
-            <p className="text-2xl dark:text-white">
+            <p className="text-2xl dark:text-white hover:bg-[#20c2c2]  hover:py-2 hover:rounded-md">
               <NavLink className="px-4 py-2 " to={"/create"}>
                 {movie ? "Update" : "Create"}
               </NavLink>
@@ -113,7 +113,7 @@ export const Header = ({ toggle, settoggle }) => {
             {islogin && (
               <button
                 onClick={handlelogin}
-                className="px-4 py-2 rounded-md text-2xl text-white bg-red-500 capitalize"
+                className="px-4 py-2 rounded-md text-2xl text-white bg-red-500 capitalize hover:bg-red-600"
               >
                 {" "}
                 logout
